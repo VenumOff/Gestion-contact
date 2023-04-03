@@ -188,7 +188,7 @@ namespace Exo
 
         static void ShowAllContacts(Dictionary<string, List<string>> Contacts)
         {
-            foreach (Contact entry in Contacts)
+            foreach (KeyValuePair<string, List<string>> entry in Contacts)
             {
                 string PhoneNumber = entry.Key;
                 string Name = entry.Value[0];
